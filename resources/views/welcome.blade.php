@@ -29,7 +29,9 @@
     <body>
 
 {{--        <livewire:first-component/>--}}
-        <livewire:user-selector/>
+{{--        <livewire:user-selector/>--}}
+
+        <livewire:registration-wizard/>
 
         @livewireScripts
     </body>
