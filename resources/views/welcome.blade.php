@@ -28,7 +28,8 @@
     </head>
     <body>
 
-        <livewire:first-component/>
+{{--        <livewire:first-component/>--}}
+        <livewire:user-selector/>
 
         @livewireScripts
     </body>
