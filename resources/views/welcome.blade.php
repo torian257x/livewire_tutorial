@@ -30,8 +30,8 @@
 
 {{--        <livewire:first-component/>--}}
 {{--        <livewire:user-selector/>--}}
-
-        <livewire:registration-wizard/>
+{{--        <livewire:registration-wizard/>--}}
+        <livewire:security-problem :user="\App\Models\User::first()"/>
 
         @livewireScripts
     </body>
