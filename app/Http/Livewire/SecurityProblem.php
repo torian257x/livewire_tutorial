@@ -18,5 +18,10 @@ class SecurityProblem extends Component
         return view('livewire.security-problem', ['user' => $user]);
     }
 
+    public function updatingUserId($newValue){
+        if($this->userId !== $newValue){
+            throw new \Exception('bad BOI!!');
+        }
+    }
 
 }
