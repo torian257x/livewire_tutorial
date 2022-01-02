@@ -425,33 +425,16 @@
 </style>
 
 <div class="container">
-    <div class="bg-primary d-flex justify-content-between px-3">
+    <div class="bg-primary d-flex justify-content-between ps-3">
         <div class="fs-1 text-white">Shopping Cart</div>
-            <div class="btn btn-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#FFFFFF" class="" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                </svg>
-            </div>
+              <livewire:shopping-cart />
         </div>
 
     <div class="pt-4"></div>
-    <div class="ms-n3 mt-n3 d-flex flex-wrap">
-
-        @foreach([1,2,3,4] as $currentId)
-            <div class="card ms-3 mt-3" style="width: 18rem;">
-                <img src="https://picsum.photos/id/{{ $currentId * 10 }}/300/100" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        @endforeach
-    </div>
+        <livewire:product-selector />
 </div>
 @livewireScripts
-<script src="https: //cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
